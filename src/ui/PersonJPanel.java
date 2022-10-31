@@ -225,39 +225,7 @@ public class PersonJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this,"Patient Added Successfully","Success",JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 }
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {                                   
-        
-        DefaultTableModel model=(DefaultTableModel) personDirectory.getModel();
-        Vector<Vector> tableData=model.getDataVector();
-        try {
-            FileOutputStream file =new FileOutputStream("PD.bin");
-            ObjectOutputStream output=new ObjectOutputStream(file);
-            output.writeObject(tableData);
-            output.close();
-            file.close();
-        }
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }                                  
 
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {                                  
-        
-        try {
-            FileInputStream file=new FileInputStream("PD.bin");
-            ObjectInputStream input=new ObjectInputStream(file);
-            Vector<Vector> tableData=(Vector<Vector>) input.readObject();
-            input.close();
-            file.close();
-            DefaultTableModel model=(DefaultTableModel) personDirectory.getModel();
-            for(int i=0;i<tableData.size();i++){
-                Vector row=tableData.get(i);
-                model.addRow(new Object[]{row.get(0),row.get(1),row.get(2),row.get(3),row.get(4),row.get(5)});
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField age;
     private javax.swing.JTextField city;

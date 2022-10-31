@@ -47,7 +47,12 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
 
         doctorDirectory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {"St. James", "Dr. Jones"},
+                {"St. James", "Dr. Will"},
+                {"Children", "Dr. Ruano"},
+                {"Children", "Dr. Arora"},
+                {"Children", "Dr. Patel"},
+                {"Children", "Dr. Singh"}
             },
             new String [] {
                 "Hospital", "Doctor Name"
@@ -138,7 +143,7 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField doctor;
-    private javax.swing.JTable doctorDirectory;
+    public javax.swing.JTable doctorDirectory;
     private javax.swing.JTextField hospital;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
