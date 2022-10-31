@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author anweshsingh
+ * @author yashaswibhavaraju
  */
 public class HospitalAdminJPanel extends javax.swing.JPanel {
 
@@ -38,6 +38,8 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
         doctor = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(153, 153, 255));
+
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("Add a Doctor");
 
@@ -48,11 +50,11 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
         doctorDirectory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"St. James", "Dr. Jones"},
-                {"St. James", "Dr. Will"},
-                {"Children", "Dr. Ruano"},
-                {"Children", "Dr. Arora"},
-                {"Children", "Dr. Patel"},
-                {"Children", "Dr. Singh"}
+                {"Georges Pierre", "Dr. Will"},
+                {"Children's", "Dr. Ruano"},
+                {"VA Hospital", "Dr. Arora"},
+                {"Cedars Sinai", "Dr. Patel"},
+                {"RML", "Dr. Singh"}
             },
             new String [] {
                 "Hospital", "Doctor Name"

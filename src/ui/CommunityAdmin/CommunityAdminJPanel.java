@@ -47,6 +47,8 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setText("View Hospitals");
 
@@ -54,7 +56,10 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
             new Object [][] {
                 {"St. James", "Jam", "Bos"},
                 {"Children", "Jam", "Bos"},
-                {"Matthews", "Rox", "Bos"}
+                {"Matthews", "Rox", "Bos"},
+                {"Children", "Rox", "Bos"},
+                {"VA", "Huntington", "Bos"},
+                {"Apollo", "Dorchester", "Bos"}
             },
             new String [] {
                 "Hospital", "Community", "City"

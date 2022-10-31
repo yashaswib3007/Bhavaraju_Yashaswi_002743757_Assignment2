@@ -23,7 +23,7 @@ import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
  *
- * @author anweshsingh
+ * @author yashaswibhavaraju
  */
 public class DoctorJPanel extends javax.swing.JPanel {
 
@@ -57,6 +57,8 @@ public class DoctorJPanel extends javax.swing.JPanel {
         heartRate = new javax.swing.JTextField();
         weight = new javax.swing.JTextField();
         add = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(153, 153, 255));
 
         jLabel2.setText("Patient Name");
 

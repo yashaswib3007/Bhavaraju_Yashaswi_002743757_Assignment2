@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author anweshsingh
+ * @author yashaswibhavaraju
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -61,6 +61,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        controlJPanel.setBackground(new java.awt.Color(0, 255, 51));
+
         jButton2.setText("Search Doctors");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +103,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(controlJPanel);
 
+        workareaJPanel.setBackground(new java.awt.Color(204, 255, 204));
+
         jLabel1.setText("System Admin Login :");
 
         jLabel2.setText("User Name :");
@@ -138,28 +142,6 @@ public class MainJFrame extends javax.swing.JFrame {
         workareaJPanelLayout.setHorizontalGroup(
             workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(workareaJPanelLayout.createSequentialGroup()
-                .addContainerGap(525, Short.MAX_VALUE)
-                .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workareaJPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(89, 89, 89))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workareaJPanelLayout.createSequentialGroup()
-                        .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rolebox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(username)
-                                .addComponent(password, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)))
-                        .addGap(100, 100, 100))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workareaJPanelLayout.createSequentialGroup()
-                        .addComponent(syslogin)
-                        .addGap(117, 117, 117))))
-            .addGroup(workareaJPanelLayout.createSequentialGroup()
                 .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(workareaJPanelLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
@@ -180,12 +162,33 @@ public class MainJFrame extends javax.swing.JFrame {
                         .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(otherLogin)
                             .addComponent(user, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 265, Short.MAX_VALUE))
+            .addGroup(workareaJPanelLayout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workareaJPanelLayout.createSequentialGroup()
+                        .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rolebox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(username)
+                                .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(11, 11, 11))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, workareaJPanelLayout.createSequentialGroup()
+                        .addComponent(syslogin)
+                        .addGap(28, 28, 28)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         workareaJPanelLayout.setVerticalGroup(
             workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(workareaJPanelLayout.createSequentialGroup()
-                .addGap(75, 75, 75)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1)
                 .addGap(23, 23, 23)
                 .addGroup(workareaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -201,7 +204,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addComponent(syslogin)
-                .addGap(69, 69, 69)
+                .addGap(94, 94, 94)
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
@@ -226,7 +229,7 @@ public class MainJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 993, Short.MAX_VALUE))
+                .addComponent(jSplitPane1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,6 +264,8 @@ public class MainJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,"Incorrect login or password",
                 "Error",JOptionPane.ERROR_MESSAGE);
         }
+        username.setText("");
+        password.setText("");
     }//GEN-LAST:event_sysloginActionPerformed
 
     private void otherLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_otherLoginActionPerformed
@@ -280,6 +285,8 @@ public class MainJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,"Incorrect login or password",
                 "Error",JOptionPane.ERROR_MESSAGE);
         }
+        user.setText("");
+        pass.setText("");
     }//GEN-LAST:event_otherLoginActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
